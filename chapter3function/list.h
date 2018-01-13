@@ -5,4 +5,10 @@
 #ifndef LINUXCSTUDY_LIST_H
 #define LINUXCSTUDY_LIST_H
 
+extern int insert(int val);
+
+extern void print();
+
+extern void destroy();
+
 #endif //LINUXCSTUDY_LIST_H
