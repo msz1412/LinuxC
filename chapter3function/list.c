@@ -5,6 +5,7 @@
 #include "list.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <zconf.h>
 
 // 自定义指针类型
 typedef struct node *Node;
@@ -73,6 +74,27 @@ void destroy() {
     }
     // 最后释放头节点
     head = NULL;
+}
+
+int print_args(int begin, ...) {
+    va_list ap;
+    char *p;
+    int n;
+    // 从可变参数的第一个参数开始遍历
+    va_start(ap, begin);
+    // 得到第一个参数
+    p = va_arg(ap, char*);
+    n = 0;
+    while (p != NULL) {
+        // 累计参数个数
+        n++;
+        printf("arg %d : %s\n", n, p);
+        // 获取下一个参数
+        p = va_arg(ap, char*);
+    }
+    // 处理完毕，做一些清理工作
+    va_end(ap);
+    return n;
 }
 
 

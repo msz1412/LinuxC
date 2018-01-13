@@ -11,4 +11,9 @@ extern void print();
 
 extern void destroy();
 
+/**
+ * 可变参数函数，其中第一个参数的类型是固定的，在定义的时候必须已经定义好,传入的为NULL的话那么久自动忽略掉
+ */
+extern int print_args(int begin, ...);
+
 #endif //LINUXCSTUDY_LIST_H
