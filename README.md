@@ -1,2 +1,2 @@
-# LinuxC
-《Linux C程序设计王者归来》学习笔记
+# 《Linux C程序设计王者归来》学习
+![图书图片](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515835153309&di=5b802c0a9e4597c41ee175e8778aef8a&imgtype=0&src=http%3A%2F%2Fimages.bookuu.com%2Fbook%2FC%2F01840%2F2957966-fm.jpg)
